@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Basic -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- SEO -->
+    <meta name="description" content="AI Task Manager App with Dark Mode" />
+    <meta name="keywords" content="React, Task Manager, Todo App, AI App" />
+    <meta name="author" content="Your Name" />
+
+    <!-- Theme color (for mobile browser UI) -->
+    <meta name="theme-color" content="#4facfe" />
+
+    <!-- Title -->
+    <title>AI Task Manager</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+
+    <!-- Google Fonts (optional, modern UI) -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Smooth font rendering -->
+    <style>
+      body {
+        margin: 0;
+        font-family: "Poppins", sans-serif;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- If JS disabled -->
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+
+    <!-- React root -->
+    <div id="root"></div>
+
+    <!-- Optional: Loader (shows before React loads) -->
+    <div id="loader">
+      <p style="text-align:center; margin-top:20%">Loading...</p>
+    </div>
+
+    <!-- Remove loader after React loads -->
+    <script>
+      window.addEventListener("load", () => {
+        const loader = document.getElementById("loader");
+        if (loader) loader.style.display = "none";
+      });
+    </script>
+  </body>
+</html>
